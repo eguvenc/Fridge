@@ -6,7 +6,7 @@
 ## Kurulum
 
 ``` bash
-$ git clone http://github.com/eguvenc/Fridge Fridge
+$ git clone https://github.com/eguvenc/Fridge Fridge
 ```
 
 Projeyi fridge klasörü altındaki index.php dosyasından çalıştırabilirsiniz.
