@@ -9,15 +9,20 @@ namespace Drinks;
  */
 class CocaCola implements DrinkInterface 
 {
-	protected $cl;
+    /**
+     * Litre
+     * 
+     * @var integer
+     */
+    protected $cl;
 
-	/**
-	 * Constructor
-	 * 
-	 * @param string $cl litre
-	 */
+    /**
+     * Constructor
+     * 
+     * @param string $cl litre
+     */
     public function __construct($cl = '33')
     {
-    	$this->cl = '33';
+        $this->cl = '33';
     }
 }

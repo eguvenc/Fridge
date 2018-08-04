@@ -42,25 +42,24 @@ Birden fazla içecek koyulabilir veya alınabilir.
 ```php
 try {
 
-	$fridge->put(
-		[
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-		]
-	);
+    $fridge->put(
+        [
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+        ]
+    );
+    $drinks = $fridge->get(6);
 
-	$drinks = $fridge->get(6);
-
-	echo '<pre>';
-	print_r($drinks);
-	echo '</pre>';
+    echo '<pre>';
+    print_r($drinks);
+    echo '</pre>';
 
 } catch (Exception $e) {
-	echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
+    echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
 }
 ```
 
@@ -83,14 +82,14 @@ $fridge->setFridgeCapacity(2 * 3);
 
 ```php
 try {
-	$drinks = $fridge->get(6);
+    $drinks = $fridge->get(6);
 
-	echo '<pre>';
-	print_r($drinks);
-	echo '</pre>';
+    echo '<pre>';
+    print_r($drinks);
+    echo '</pre>';
 
 } catch (Exception $e) {
-	echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
+    echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
 }
 ```
 
@@ -102,19 +101,19 @@ try {
 
 ```php
 try {
-	$fridge->put(
-		[
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-		]
-	);
+    $fridge->put(
+        [
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+        ]
+    );
 } catch (Exception $e) {
-	echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
+    echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
 }
 ```
 
@@ -126,30 +125,30 @@ try {
 ```
 try {
 
-	$fridge->put(
-		[
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-			new CocaCola('33'),
-		]
-	);
+    $fridge->put(
+        [
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+            new CocaCola('33'),
+        ]
+    );
 
-	echo 'Kalan Yer:' . $fridge->getNumberOfAvailableForPut().'<br />';
+    echo 'Kalan Yer:' . $fridge->getNumberOfAvailableForPut().'<br />';
 
-	$drinks = $fridge->get(4);
+    $drinks = $fridge->get(4);
 
-	echo '<pre>';
-	print_r($drinks);
-	echo '</pre>';
+    echo '<pre>';
+    print_r($drinks);
+    echo '</pre>';
 
-	echo 'Kalan Yer:' . $fridge->getNumberOfAvailableForPut().'<br />';
-	echo 'Verilen İçecek:'.count($drinks).'<br />';
-	echo 'Kalan İçecek:' . $fridge->getNumberOfAvailableForGet().'<br />';
+    echo 'Kalan Yer:' . $fridge->getNumberOfAvailableForPut().'<br />';
+    echo 'Verilen İçecek:'.count($drinks).'<br />';
+    echo 'Kalan İçecek:' . $fridge->getNumberOfAvailableForGet().'<br />';
 
 } catch (Exception $e) {
-	echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
+    echo '<b>'.get_class($e).'</b> : '.$e->getMessage();
 }
 ```
 

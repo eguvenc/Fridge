@@ -3,12 +3,17 @@
 use Drinks\DrinkInterface;
 
 /**
- * Each shelf is able to get max 20 drinks.
+ * Shelf class
  *
  * @author Ersin Güvenç
  */
 class Shelf implements ShelfInterface
 {
+    /**
+     * Shelf stack
+     * 
+     * @var array
+     */
     protected $stack = array();
 
     /**
