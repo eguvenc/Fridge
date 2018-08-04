@@ -122,7 +122,7 @@ try {
 
 ### Buzdolabı kısmen dolu ise, 6 kapasite için 5 ürün ekledik, 4 tane aldık
 
-```
+```php
 try {
 
     $fridge->put(
@@ -134,7 +134,6 @@ try {
             new CocaCola('33'),
         ]
     );
-
     echo 'Kalan Yer:' . $fridge->getNumberOfAvailableForPut().'<br />';
 
     $drinks = $fridge->get(4);
